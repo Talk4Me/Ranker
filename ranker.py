@@ -15,7 +15,7 @@ for message in messages:
 	rpc["message"] = message
 	rpc["payload"] = payload
 
-vector = {"Openness":0.5, "Conscientiousness":0.5, "Extraversion":0.5, "Agreeableness":0.5, "Emotional range":0.5}
+vector = {"Openness":0.5, "Conscientiousness":0.5, "Extraversion":0.5, "Agreeableness":0.5, "Emotional range":0.5, "Curiosity":1}
 matchDist = requests.post(PERSAN_URL, data=json.dumps({"text":payload, "vector":vector}))
 
 print rpc
